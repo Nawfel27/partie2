@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("Git Checkout") {
             steps {
-                git credentialsId: "connection_git-jenkins", url: "https://github.com/YassineBoutouil/Jenkins.git"
+                git credentialsId: "id_git", url: "https://github.com/Nawfel27/partie2.git"
             }
         }
         stage('Build the application') {
